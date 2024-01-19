@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "pvo:GroupVI" "pvo:Icosaedral" "obo:TO_0000387" "obo:C14336" "obo:C54085" "pvo:AgainstTheTransmission" "obo:TRANS_0000000" "http://purl.bioontology.org/ontology/CSP/4006-0094" "pvo:PhysicalTransmission" "pvo:LipidicCharacteristic" "pvo:Vector" "pvo:GroupIII" "pvo:ViralForm" "pvo:BiologicalTransmission" "http://snomed.info/id/278201002" "obo:NCIT_C14250" "obo:C14340" "obo:C86587" "pvo:Helical" "obo:MI_2044" "obo:HP_0000118" "obo:C14200" "obo:C14269" "pvo:AgainstTheDisease" "pvo:GroupVII" "http://purl.bioontology.org/ontology/CSP/3099-6564" "pvo:Complex" "pvo:GroupIV" "pvo:AgainstTheVirus" "pvo:GeneticMaterial" "http://purl.bioontology.org/ontology/CSP/3099-7852" "pvo:NonEnveloped" "pvo:GroupII" "pvo:Enveloped" "pvo:GroupI" ; /*classes style*/
+	"pvo:AgainstTheTransmission" -> "obo:MI_2044" [ label = "rdfs:subClassOf" ];
+	"pvo:Icosaedral" -> "pvo:ViralForm" [ label = "rdfs:subClassOf" ];
+	"pvo:LipidicCharacteristic" -> "http://snomed.info/id/278201002" [ label = "rdfs:subClassOf" ];
+	"obo:C54085" -> "pvo:GeneticMaterial" [ label = "rdfs:subClassOf" ];
+	"obo:HP_0000118" -> "obo:TO_0000387" [ label = "rdfs:subClassOf" ];
+	"pvo:AgainstTheVirus" -> "obo:MI_2044" [ label = "rdfs:subClassOf" ];
+	"pvo:Helical" -> "pvo:ViralForm" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupVI" -> "obo:C54085" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupVI" -> "obo:C14269" [ label = "rdfs:subClassOf" ];
+	"http://purl.bioontology.org/ontology/CSP/3099-6564" -> "http://purl.bioontology.org/ontology/CSP/3099-7852" [ label = "rdfs:subClassOf" ];
+	"obo:C14340" -> "obo:NCIT_C14250" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupIV" -> "obo:C14269" [ label = "rdfs:subClassOf" ];
+	"pvo:AgainstTheDisease" -> "obo:MI_2044" [ label = "rdfs:subClassOf" ];
+	"pvo:Enveloped" -> "pvo:LipidicCharacteristic" [ label = "rdfs:subClassOf" ];
+	"obo:C86587" -> "obo:NCIT_C14250" [ label = "rdfs:subClassOf" ];
+	"obo:C14336" -> "obo:NCIT_C14250" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupII" -> "obo:C14200" [ label = "rdfs:subClassOf" ];
+	"pvo:Complex" -> "pvo:ViralForm" [ label = "rdfs:subClassOf" ];
+	"pvo:GeneticMaterial" -> "http://snomed.info/id/278201002" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupI" -> "obo:C14200" [ label = "rdfs:subClassOf" ];
+	"pvo:Vector" -> "obo:NCIT_C14250" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupIII" -> "obo:C14269" [ label = "rdfs:subClassOf" ];
+	"pvo:ViralForm" -> "http://snomed.info/id/278201002" [ label = "rdfs:subClassOf" ];
+	"pvo:BiologicalTransmission" -> "obo:TRANS_0000000" [ label = "rdfs:subClassOf" ];
+	"pvo:PhysicalTransmission" -> "obo:TRANS_0000000" [ label = "rdfs:subClassOf" ];
+	"http://purl.bioontology.org/ontology/CSP/4006-0094" -> "http://purl.bioontology.org/ontology/CSP/3099-7852" [ label = "rdfs:subClassOf" ];
+	"obo:C14269" -> "pvo:GeneticMaterial" [ label = "rdfs:subClassOf" ];
+	"obo:C14200" -> "pvo:GeneticMaterial" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupVII" -> "obo:C54085" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupVII" -> "obo:C14269" [ label = "rdfs:subClassOf" ];
+	"pvo:GroupVII" -> "obo:C14200" [ label = "rdfs:subClassOf" ];
+	"pvo:NonEnveloped" -> "pvo:LipidicCharacteristic" [ label = "rdfs:subClassOf" ];
+
+}
