@@ -1,0 +1,1048 @@
+@prefix : <https://w3id.org/plantvirusontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/plantvirusontology/> .
+
+<https://w3id.org/plantvirusontology/> rdf:type owl:Ontology ;
+                                        owl:imports <file:/D:/Descargas/test-data-xlsx.rdf> ;
+                                        <http://purl.org/dc/elements/1.1/created> "2024-15-01"^^xsd:date ;
+                                        <http://purl.org/dc/elements/1.1/creator> "David Garcia" ,
+                                                                                  "Joaquin Algorta" ;
+                                        <http://purl.org/dc/elements/1.1/description> "An ontology that describes viruses that infect plants" ;
+                                        <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                        <http://purl.org/dc/elements/1.1/title> "Plant Viruses Ontology"@en ;
+                                        owl:ontology <http://nuestra_ontologia#> ;
+                                        owl:versionInfo "0.0.1" ;
+                                        <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#ontology
+owl:ontology rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/NCIT_R41
+<http://purl.obolibrary.org/obo/NCIT_R41> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf :hasGene ;
+                                          rdfs:domain <http://semanticscience.org/resource/SIO_001383> ;
+                                          rdfs:range <http://semanticscience.org/resource/SIO_010379> ;
+                                          rdfs:comment "Gene found in organism" ;
+                                          rdfs:label "n c i t_ r41" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002452
+<http://purl.obolibrary.org/obo/RO_0002452> rdf:type owl:ObjectProperty ;
+                                            owl:inverseOf :isSymptomOf ;
+                                            rdfs:domain :Disease ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/HP_0000118> ;
+                                            rdfs:comment "Disease has symptom" ;
+                                            rdfs:label "r o_0002452" .
+
+
+###  http://semanticscience.org/resource/SIO_000062
+<http://semanticscience.org/resource/SIO_000062> rdf:type owl:ObjectProperty ;
+                                                 owl:inverseOf <http://semanticscience.org/resource/SIO_000132> ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/CHEBI_52217> ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> ;
+                                                 rdfs:comment "Drug is participant in vector control strategy" ;
+                                                 rdfs:label "s i o_000062" .
+
+
+###  http://semanticscience.org/resource/SIO_000063
+<http://semanticscience.org/resource/SIO_000063> rdf:type owl:ObjectProperty ;
+                                                 owl:inverseOf <http://semanticscience.org/resource/SIO_000139> ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C17021> ;
+                                                 rdfs:range [ rdf:type owl:Class ;
+                                                              owl:unionOf ( <http://purl.bioontology.org/ontology/CSP/3099-6564>
+                                                                            <http://purl.bioontology.org/ontology/CSP/4006-0094>
+                                                                          )
+                                                            ] ;
+                                                 rdfs:comment "Protein is agent in virus replication or integration" ;
+                                                 rdfs:label "s i o_000063" .
+
+
+###  http://semanticscience.org/resource/SIO_000132
+<http://semanticscience.org/resource/SIO_000132> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/CHEBI_52217> ;
+                                                 rdfs:comment "Vector control strategy has participant drug" ;
+                                                 rdfs:label "s i o_000132" .
+
+
+###  http://semanticscience.org/resource/SIO_000139
+<http://semanticscience.org/resource/SIO_000139> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                               owl:unionOf ( <http://purl.bioontology.org/ontology/CSP/3099-6564>
+                                                                             <http://purl.bioontology.org/ontology/CSP/4006-0094>
+                                                                           )
+                                                             ] ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/NCIT_C17021> ;
+                                                 rdfs:comment "Virus integration or replication has agent protein" ;
+                                                 rdfs:label "s i o_000139" .
+
+
+###  http://semanticscience.org/resource/SIO_000205
+<http://semanticscience.org/resource/SIO_000205> rdf:type owl:ObjectProperty ;
+                                                 owl:inverseOf <http://semanticscience.org/resource/SIO_000210> ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C16612> ;
+                                                 rdfs:range <http://semanticscience.org/resource/SIO_001383> ;
+                                                 rdfs:comment "Gene is represented by gene symbol" ;
+                                                 rdfs:label "s i o_000205" .
+
+
+###  http://semanticscience.org/resource/SIO_000210
+<http://semanticscience.org/resource/SIO_000210> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://semanticscience.org/resource/SIO_001383> ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/NCIT_C16612> ;
+                                                 rdfs:comment "Gene symbol represents gene" ;
+                                                 rdfs:label "s i o_000210" .
+
+
+###  http://semanticscience.org/resource/SIO_001403
+<http://semanticscience.org/resource/SIO_001403> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C25464>
+                                                                             :PrevalenceAtTime
+                                                                           )
+                                                             ] ;
+                                                 rdfs:range [ rdf:type owl:Class ;
+                                                              owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C25464>
+                                                                            :Climate
+                                                                          )
+                                                            ] ;
+                                                 rdfs:comment "is associated with" ;
+                                                 rdfs:label "s i o_001403" .
+
+
+###  http://semanticscience.org/resource/SIO_010078
+<http://semanticscience.org/resource/SIO_010078> rdf:type owl:ObjectProperty ;
+                                                 owl:inverseOf <http://semanticscience.org/resource/SIO_010079> ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C16612> ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/NCIT_C17021> ;
+                                                 rdfs:comment "Gene encodes protein" ;
+                                                 rdfs:label "s i o_010078" .
+
+
+###  http://semanticscience.org/resource/SIO_010079
+<http://semanticscience.org/resource/SIO_010079> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C17021> ;
+                                                 rdfs:range <http://purl.obolibrary.org/obo/NCIT_C16612> ;
+                                                 rdfs:comment "Protein is encoded by gene" ;
+                                                 rdfs:label "s i o_010079" .
+
+
+###  https://w3id.org/plantvirusontology/affectedBy
+:affectedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :affects ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( <http://purl.obolibrary.org/obo/CARO_0000043>
+                                        <http://purl.obolibrary.org/obo/MI_0619>
+                                      )
+                        ] ;
+            rdfs:range :Disease ;
+            rdfs:comment "Tissue or pathway affected by disease" ;
+            rdfs:label "affected by" .
+
+
+###  https://w3id.org/plantvirusontology/affects
+:affects rdf:type owl:ObjectProperty ;
+         rdfs:domain :Disease ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( <http://purl.obolibrary.org/obo/CARO_0000043>
+                                    <http://purl.obolibrary.org/obo/MI_0619>
+                                  )
+                    ] ;
+         rdfs:comment "Disease affects tissue or pathway" ;
+         rdfs:label "affects" .
+
+
+###  https://w3id.org/plantvirusontology/affectsPlant
+:affectsPlant rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasDisease ;
+              rdfs:domain :Disease ;
+              rdfs:range <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+              rdfs:comment "Disease affects plant" ;
+              rdfs:label "affects plant" .
+
+
+###  https://w3id.org/plantvirusontology/approvedIn
+:approvedIn rdf:type owl:ObjectProperty ;
+            owl:inverseOf :hasApprovedDrug ;
+            rdfs:domain :Drug ;
+            rdfs:range <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+            rdfs:comment "Drug approved in country" ;
+            rdfs:label "approved in" .
+
+
+###  https://w3id.org/plantvirusontology/belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           owl:inverseOf :contains ;
+           rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C25160> ;
+           rdfs:range <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+           rdfs:comment "City belongs to country" ;
+           rdfs:label "belongs to" .
+
+
+###  https://w3id.org/plantvirusontology/commercializedBy
+:commercializedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :commercializes ;
+                  rdfs:domain :Drug ;
+                  rdfs:range :Company ;
+                  rdfs:comment "Drug commercialized by company" ;
+                  rdfs:label "commercialized by" .
+
+
+###  https://w3id.org/plantvirusontology/commercializes
+:commercializes rdf:type owl:ObjectProperty ;
+                rdfs:domain :Company ;
+                rdfs:range :Drug ;
+                rdfs:comment "Company commercializes drug" ;
+                rdfs:label "commercializes" .
+
+
+###  https://w3id.org/plantvirusontology/contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+          rdfs:range <http://purl.obolibrary.org/obo/NCIT_C25160> ;
+          rdfs:comment "Country contains city" ;
+          rdfs:label "contains" .
+
+
+###  https://w3id.org/plantvirusontology/employedByDrug
+:employedByDrug rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasDrugMechanism ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :AgainstTheDisease
+                                            :AgainstTheTransmission
+                                            :AgainstTheVirus
+                                          )
+                            ] ;
+                rdfs:range :Drug ;
+                rdfs:comment "Drug mechanism employed by drug" ;
+                rdfs:label "employed by drug" .
+
+
+###  https://w3id.org/plantvirusontology/employedByVirus
+:employedByVirus rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :hasInfectionMechanism ;
+                 rdfs:domain <http://purl.bioontology.org/ontology/CSP/3099-7852> ;
+                 rdfs:range <http://semanticscience.org/resource/SIO_010379> ;
+                 rdfs:comment "Infection mechanism employed by virus" ;
+                 rdfs:label "employed by virus" .
+
+
+###  https://w3id.org/plantvirusontology/hasApprovedDrug
+:hasApprovedDrug rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+                 rdfs:range :Drug ;
+                 rdfs:comment "Country has approved drug" ;
+                 rdfs:label "has approved drug" .
+
+
+###  https://w3id.org/plantvirusontology/hasBaltimoreGroup
+:hasBaltimoreGroup rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( :GroupI
+                                              :GroupII
+                                              :GroupIII
+                                              :GroupIV
+                                              :GroupV
+                                              :GroupVI
+                                              :GroupVII
+                                            )
+                              ] ;
+                   rdfs:comment "Virus has Baltimore group" ;
+                   rdfs:label "has baltimore group" .
+
+
+###  https://w3id.org/plantvirusontology/hasBorderWith
+:hasBorderWith rdf:type owl:ObjectProperty ;
+               owl:inverseOf :hasBorderWith ;
+               rdf:type owl:SymmetricProperty ;
+               rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+               rdfs:range <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+               rdfs:comment "Country has border with country" ;
+               rdfs:label "has border with" .
+
+
+###  https://w3id.org/plantvirusontology/hasControlStrategy
+:hasControlStrategy rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :usedForVector ;
+                    rdfs:domain :Vector ;
+                    rdfs:range <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> ;
+                    rdfs:comment "Vector has control strategy" ;
+                    rdfs:label "has control strategy" .
+
+
+###  https://w3id.org/plantvirusontology/hasDisease
+:hasDisease rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+            rdfs:range :Disease ;
+            rdfs:comment "Plant has disease" ;
+            rdfs:label "has disease" .
+
+
+###  https://w3id.org/plantvirusontology/hasDrugMechanism
+:hasDrugMechanism rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Drug ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( :AgainstTheDisease
+                                             :AgainstTheTransmission
+                                             :AgainstTheVirus
+                                           )
+                             ] ;
+                  rdfs:comment "Drug has drug mechanism" ;
+                  rdfs:label "has drug mechanism" .
+
+
+###  https://w3id.org/plantvirusontology/hasGene
+:hasGene rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+         rdfs:range <http://semanticscience.org/resource/SIO_001383> ;
+         rdfs:comment "Virus has gene" ;
+         rdfs:label "has gene" .
+
+
+###  https://w3id.org/plantvirusontology/hasHeadquartersOf
+:hasHeadquartersOf rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :headquartersIn ;
+                   rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C25160> ;
+                   rdfs:range :Company ;
+                   rdfs:comment "City has headquarters of company" ;
+                   rdfs:label "has headquarters of" .
+
+
+###  https://w3id.org/plantvirusontology/hasInfectionMechanism
+:hasInfectionMechanism rdf:type owl:ObjectProperty ;
+                       rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+                       rdfs:range <http://purl.bioontology.org/ontology/CSP/3099-7852> ;
+                       rdfs:comment "Virus has infection mechanism" ;
+                       rdfs:label "has infection mechanism" .
+
+
+###  https://w3id.org/plantvirusontology/hasLipidicClassification
+:hasLipidicClassification rdf:type owl:ObjectProperty ;
+                          rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+                          rdfs:range [ rdf:type owl:Class ;
+                                       owl:unionOf ( :Enveloped
+                                                     :NonEnveloped
+                                                   )
+                                     ] ;
+                          rdfs:comment "Virus has lipidic classification" ;
+                          rdfs:label "has lipidic classification" .
+
+
+###  https://w3id.org/plantvirusontology/hasPrevalence
+:hasPrevalence rdf:type owl:ObjectProperty ;
+               owl:inverseOf :prevalenceOfVirus ;
+               rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+               rdfs:range :PrevalenceAtTime ;
+               rdfs:comment "Virus has prevalence" ;
+               rdfs:label "has prevalence" .
+
+
+###  https://w3id.org/plantvirusontology/hasReservoir
+:hasReservoir rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isReservoirFor ;
+              rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+              rdfs:range <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+              rdfs:comment "Virus has reservoir in organism" ;
+              rdfs:label "has reservoir" .
+
+
+###  https://w3id.org/plantvirusontology/hasShape
+:hasShape rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Complex
+                                     :Helical
+                                     :Icosaedral
+                                   )
+                     ] ;
+          rdfs:comment "Virus has shape" ;
+          rdfs:label "has shape" .
+
+
+###  https://w3id.org/plantvirusontology/hasTarget
+:hasTarget rdf:type owl:ObjectProperty ;
+           owl:inverseOf :targettedBy ;
+           rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+           rdfs:range <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+           rdfs:comment "Virus has target plant" ;
+           rdfs:label "has target" .
+
+
+###  https://w3id.org/plantvirusontology/hasVector
+:hasVector rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isVectorOf ;
+           rdfs:domain :BiologicalTransmission ;
+           rdfs:range :Vector ;
+           rdfs:comment "Biological transmission has vector" ;
+           rdfs:label "has vector" .
+
+
+###  https://w3id.org/plantvirusontology/headquartersIn
+:headquartersIn rdf:type owl:ObjectProperty ;
+                rdfs:domain :Company ;
+                rdfs:range <http://purl.obolibrary.org/obo/NCIT_C25160> ;
+                rdfs:comment "Company has headquarters in city" ;
+                rdfs:label "headquarters in" .
+
+
+###  https://w3id.org/plantvirusontology/interactsWithDrug
+:interactsWithDrug rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :interactsWithProtein ;
+                   rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C17021> ;
+                   rdfs:range :Drug ;
+                   rdfs:comment "Protein interacts with drug" ;
+                   rdfs:label "interacts with drug" .
+
+
+###  https://w3id.org/plantvirusontology/interactsWithProtein
+:interactsWithProtein rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Drug ;
+                      rdfs:range <http://purl.obolibrary.org/obo/NCIT_C17021> ;
+                      rdfs:comment "Drug interacts with protein" ;
+                      rdfs:label "interacts with protein" .
+
+
+###  https://w3id.org/plantvirusontology/isReservoirFor
+:isReservoirFor rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+                rdfs:range <http://semanticscience.org/resource/SIO_010379> ;
+                rdfs:comment "Organism is reservoir for virus" ;
+                rdfs:label "is reservoir for" .
+
+
+###  https://w3id.org/plantvirusontology/isSymptomOf
+:isSymptomOf rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://purl.obolibrary.org/obo/HP_0000118> ;
+             rdfs:range :Disease ;
+             rdfs:comment "Symptom is symptom of disease" ;
+             rdfs:label "is symptom of" .
+
+
+###  https://w3id.org/plantvirusontology/isVectorOf
+:isVectorOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Vector ;
+            rdfs:range :BiologicalTransmission ;
+            rdfs:comment "Vector is vector of biological transmission" ;
+            rdfs:label "is vector of" .
+
+
+###  https://w3id.org/plantvirusontology/locatedAt
+:locatedAt rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+           rdfs:range :Climate ;
+           rdfs:comment "Plant located at climate" ;
+           rdfs:label "located at" .
+
+
+###  https://w3id.org/plantvirusontology/plantLocatedAt
+:plantLocatedAt rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+                rdfs:range <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+                rdfs:comment "Plant located at country" ;
+                rdfs:label "plant located at" .
+
+
+###  https://w3id.org/plantvirusontology/prevalenceOfVirus
+:prevalenceOfVirus rdf:type owl:ObjectProperty ;
+                   rdfs:domain :PrevalenceAtTime ;
+                   rdfs:range <http://semanticscience.org/resource/SIO_010379> ;
+                   rdfs:comment "Prevalence of virus" ;
+                   rdfs:label "prevalence of virus" .
+
+
+###  https://w3id.org/plantvirusontology/targettedBy
+:targettedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+             rdfs:range <http://semanticscience.org/resource/SIO_010379> ;
+             rdfs:comment "Plant targetted by virus" ;
+             rdfs:label "targetted by" .
+
+
+###  https://w3id.org/plantvirusontology/transmitsVirus
+:transmitsVirus rdf:type owl:ObjectProperty ;
+                owl:inverseOf :transmittedBy ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :BiologicalTransmission
+                                            :PhysicalTransmission
+                                          )
+                            ] ;
+                rdfs:range <http://semanticscience.org/resource/SIO_010379> ;
+                rdfs:comment "Biological or physical transmission tranmits virus" ;
+                rdfs:label "transmits virus" .
+
+
+###  https://w3id.org/plantvirusontology/transmittedBy
+:transmittedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( :BiologicalTransmission
+                                          :PhysicalTransmission
+                                        )
+                          ] ;
+               rdfs:comment "Virus transmitted by physical or biological transmission" ;
+               rdfs:label "transmitted by" .
+
+
+###  https://w3id.org/plantvirusontology/treatedBy
+:treatedBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :treatsDisease ;
+           rdfs:domain :Disease ;
+           rdfs:range :Drug ;
+           rdfs:comment "Disease treated by drug" ;
+           rdfs:label "treated by" .
+
+
+###  https://w3id.org/plantvirusontology/treatsDisease
+:treatsDisease rdf:type owl:ObjectProperty ;
+               rdfs:domain :Drug ;
+               rdfs:range :Disease ;
+               rdfs:comment "Drug treats disease" ;
+               rdfs:label "treats disease" .
+
+
+###  https://w3id.org/plantvirusontology/usedForVector
+:usedForVector rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> ;
+               rdfs:range :Vector ;
+               rdfs:comment "Vector control strategy used for vector" ;
+               rdfs:label "used for vector" .
+
+
+###  https://w3id.org/plantvirusontology/virusLocatedAt
+:virusLocatedAt rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://semanticscience.org/resource/SIO_010379> ;
+                rdfs:range <http://purl.obolibrary.org/obo/NCIT_C25464> ;
+                rdfs:comment "Virus located at country" ;
+                rdfs:label "virus located at" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/OPMI_0000481
+<http://purl.obolibrary.org/obo/OPMI_0000481> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain [ rdf:type owl:Class ;
+                                                            owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C14250>
+                                                                          <http://semanticscience.org/resource/SIO_010379>
+                                                                        )
+                                                          ] ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "has identifier" ;
+                                              rdfs:label "o p m i_0000481" .
+
+
+###  http://semanticscience.org/resource/SIO_000300
+<http://semanticscience.org/resource/SIO_000300> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain :PrevalenceAtTime ;
+                                                 rdfs:range xsd:float ;
+                                                 rdfs:comment "has value" ;
+                                                 rdfs:label "s i o_000300" .
+
+
+###  https://w3id.org/plantvirusontology/affectsSurvival
+:affectsSurvival rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Disease ;
+                 rdfs:range xsd:float ;
+                 rdfs:comment "How a disease affects the survival of a plant species, expressed as a fraction of 1" ;
+                 rdfs:label "affects survival" .
+
+
+###  https://w3id.org/plantvirusontology/affectsYield
+:affectsYield rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Disease ;
+              rdfs:range xsd:float ;
+              rdfs:comment "How a disease affects the yield of a plant species, expressed as a fraction of 1" ;
+              rdfs:label "affects yield" .
+
+
+###  https://w3id.org/plantvirusontology/atDate
+:atDate rdf:type owl:DatatypeProperty ;
+        rdfs:domain :PrevalenceAtTime ;
+        rdfs:range xsd:dateTime ;
+        rdfs:comment "prevalence at date" ;
+        rdfs:label "at date" .
+
+
+###  https://w3id.org/plantvirusontology/hasCommonName
+:hasCommonName rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C14250>
+                                           <http://semanticscience.org/resource/SIO_010379>
+                                         )
+                           ] ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Common name for virus or plant" ;
+               rdfs:label "has common name" .
+
+
+###  https://w3id.org/plantvirusontology/hasLength
+:hasLength rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C16612>
+                                       <http://purl.obolibrary.org/obo/NCIT_C17021>
+                                     )
+                       ] ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "Length of gene or protein" ;
+           rdfs:label "has length" .
+
+
+###  https://w3id.org/plantvirusontology/hasSequence
+:hasSequence rdf:type owl:DatatypeProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C16612>
+                                         <http://purl.obolibrary.org/obo/NCIT_C17021>
+                                       )
+                         ] ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Sequence of gene or protein" ;
+             rdfs:label "has sequence" .
+
+
+###  https://w3id.org/plantvirusontology/hasTemporality
+:hasTemporality rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( <http://purl.obolibrary.org/obo/NCIT_C14250>
+                                            <http://semanticscience.org/resource/SIO_010379>
+                                          )
+                            ] ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Temporality of plant or virus, seasonal, all-year-long..." ;
+                rdfs:label "has temporality" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.bioontology.org/ontology/CSP/3099-6564
+<http://purl.bioontology.org/ontology/CSP/3099-6564> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.bioontology.org/ontology/CSP/3099-7852> ;
+                                                     rdfs:comment "Virus with replication mechanism" ;
+                                                     rdfs:label "3099-6564" .
+
+
+###  http://purl.bioontology.org/ontology/CSP/3099-7852
+<http://purl.bioontology.org/ontology/CSP/3099-7852> rdf:type owl:Class ;
+                                                     rdfs:comment "Types of virus infection mechanisms" ;
+                                                     rdfs:label "3099-7852" .
+
+
+###  http://purl.bioontology.org/ontology/CSP/4006-0094
+<http://purl.bioontology.org/ontology/CSP/4006-0094> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.bioontology.org/ontology/CSP/3099-7852> ;
+                                                     rdfs:comment "Virus with integration mechanism" ;
+                                                     rdfs:label "4006-0094" .
+
+
+###  http://purl.obolibrary.org/obo/APOLLO_SV_00000308
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000308> rdf:type owl:Class ;
+                                                    rdfs:comment "Strategies for the control of viral vectors" ;
+                                                    rdfs:label "A P O L L O_ S V_00000308" .
+
+
+###  http://purl.obolibrary.org/obo/C14200
+<http://purl.obolibrary.org/obo/C14200> rdf:type owl:Class ;
+                                        rdfs:subClassOf :GeneticMaterial ;
+                                        rdfs:comment "DNA virus" ;
+                                        rdfs:label "C14200" .
+
+
+###  http://purl.obolibrary.org/obo/C14269
+<http://purl.obolibrary.org/obo/C14269> rdf:type owl:Class ;
+                                        rdfs:subClassOf :GeneticMaterial ;
+                                        rdfs:comment "RNA virus" ;
+                                        rdfs:label "C14269" .
+
+
+###  http://purl.obolibrary.org/obo/C14336
+<http://purl.obolibrary.org/obo/C14336> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+                                        rdfs:comment "Vascular plants" ;
+                                        rdfs:label "C14336" .
+
+
+###  http://purl.obolibrary.org/obo/C14340
+<http://purl.obolibrary.org/obo/C14340> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+                                        rdfs:comment "Non-vascular plants" ;
+                                        rdfs:label "C14340" .
+
+
+###  http://purl.obolibrary.org/obo/C54085
+<http://purl.obolibrary.org/obo/C54085> rdf:type owl:Class ;
+                                        rdfs:subClassOf :GeneticMaterial ;
+                                        rdfs:comment "Virus with retrotranscriptase activity" ;
+                                        rdfs:label "C54085" .
+
+
+###  http://purl.obolibrary.org/obo/C86587
+<http://purl.obolibrary.org/obo/C86587> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+                                        rdfs:comment "Algae" ;
+                                        rdfs:label "C86587" .
+
+
+###  http://purl.obolibrary.org/obo/CARO_0000043
+<http://purl.obolibrary.org/obo/CARO_0000043> rdf:type owl:Class ;
+                                              rdfs:comment "Plant tissues" ;
+                                              rdfs:label "C A R O_0000043" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_52217
+<http://purl.obolibrary.org/obo/CHEBI_52217> rdf:type owl:Class ;
+                                             owl:equivalentClass :Drug ;
+                                             rdfs:comment "Pharmaceutical" ;
+                                             rdfs:label "C H E B I_52217" .
+
+
+###  http://purl.obolibrary.org/obo/HP_0000118
+<http://purl.obolibrary.org/obo/HP_0000118> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/TO_0000387> ;
+                                            rdfs:comment "Phenotipic abnormality" ;
+                                            rdfs:label "H P_0000118" .
+
+
+###  http://purl.obolibrary.org/obo/MI_0619
+<http://purl.obolibrary.org/obo/MI_0619> rdf:type owl:Class ;
+                                         rdfs:comment "Plant molecular pathways" ;
+                                         rdfs:label "M I_0619" .
+
+
+###  http://purl.obolibrary.org/obo/MI_2044
+<http://purl.obolibrary.org/obo/MI_2044> rdf:type owl:Class ;
+                                         rdfs:comment "Types of drug mechanisms" ;
+                                         rdfs:label "M I_2044" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C14250
+<http://purl.obolibrary.org/obo/NCIT_C14250> rdf:type owl:Class ;
+                                             rdfs:comment "Organism, can be plant, vector..." ;
+                                             rdfs:label "N C I T_ C14250" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C16612
+<http://purl.obolibrary.org/obo/NCIT_C16612> rdf:type owl:Class ;
+                                             rdfs:comment "Gene" ;
+                                             rdfs:label "N C I T_ C16612" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C17021
+<http://purl.obolibrary.org/obo/NCIT_C17021> rdf:type owl:Class ;
+                                             rdfs:comment "Protein" ;
+                                             rdfs:label "N C I T_ C17021" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25160
+<http://purl.obolibrary.org/obo/NCIT_C25160> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :belongsTo ;
+                                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                             ] ;
+                                             rdfs:comment "City" ;
+                                             rdfs:label "N C I T_ C25160" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25464
+<http://purl.obolibrary.org/obo/NCIT_C25464> rdf:type owl:Class ;
+                                             rdfs:comment "Country" ;
+                                             rdfs:label "N C I T_ C25464" .
+
+
+###  http://purl.obolibrary.org/obo/TO_0000387
+<http://purl.obolibrary.org/obo/TO_0000387> rdf:type owl:Class ;
+                                            rdfs:comment "Plant phenotype" ;
+                                            rdfs:label "T O_0000387" .
+
+
+###  http://purl.obolibrary.org/obo/TRANS_0000000
+<http://purl.obolibrary.org/obo/TRANS_0000000> rdf:type owl:Class ;
+                                               rdfs:comment "Types of viral transmission" ;
+                                               rdfs:label "T R A N S_0000000" .
+
+
+###  http://semanticscience.org/resource/SIO_001383
+<http://semanticscience.org/resource/SIO_001383> rdf:type owl:Class ;
+                                                 rdfs:comment "Gene symbol" ;
+                                                 rdfs:label "S I O_001383" .
+
+
+###  http://semanticscience.org/resource/SIO_010379
+<http://semanticscience.org/resource/SIO_010379> rdf:type owl:Class ;
+                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasTarget ;
+                                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasBaltimoreGroup ;
+                                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasLipidicClassification ;
+                                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasShape ;
+                                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] ;
+                                                 rdfs:comment "Virus" ;
+                                                 rdfs:label "S I O_010379" .
+
+
+###  http://snomed.info/id/278201002
+<http://snomed.info/id/278201002> rdf:type owl:Class ;
+                                  rdfs:comment "Types of classifications of virus" ;
+                                  rdfs:label "278201002" .
+
+
+###  https://w3id.org/plantvirusontology/AgainstTheDisease
+:AgainstTheDisease rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/MI_2044> ;
+                   rdfs:comment "Drugs affecting the disease caused by a virus" ;
+                   rdfs:label "Against The Disease" .
+
+
+###  https://w3id.org/plantvirusontology/AgainstTheTransmission
+:AgainstTheTransmission rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.obolibrary.org/obo/MI_2044> ;
+                        rdfs:comment "Drugs affecting the transmission of a virus" ;
+                        rdfs:label "Against The Transmission" .
+
+
+###  https://w3id.org/plantvirusontology/AgainstTheVirus
+:AgainstTheVirus rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/MI_2044> ;
+                 rdfs:comment "Drugs affecting the virus itself" ;
+                 rdfs:label "Against The Virus" .
+
+
+###  https://w3id.org/plantvirusontology/BiologicalTransmission
+:BiologicalTransmission rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.obolibrary.org/obo/TRANS_0000000> ;
+                        rdfs:comment "Biological transmission of virus" ;
+                        rdfs:label "Biological Transmission" .
+
+
+###  https://w3id.org/plantvirusontology/Climate
+:Climate rdf:type owl:Class ;
+         rdfs:comment "Different types of climates" ;
+         rdfs:label "Climate" .
+
+
+###  https://w3id.org/plantvirusontology/Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :headquartersIn ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "Drug-selling companies" ;
+         rdfs:label "Company" .
+
+
+###  https://w3id.org/plantvirusontology/Complex
+:Complex rdf:type owl:Class ;
+         rdfs:subClassOf :ViralForm ;
+         rdfs:comment "Virus with complex viral shape" ;
+         rdfs:label "Complex" .
+
+
+###  https://w3id.org/plantvirusontology/Disease
+:Disease rdf:type owl:Class ;
+         rdfs:comment "Virus-produced diseases in plants" ;
+         rdfs:label "Disease" .
+
+
+###  https://w3id.org/plantvirusontology/Drug
+:Drug rdf:type owl:Class ;
+      rdfs:comment "Drug used in plants against virus" ;
+      rdfs:label "Drug" .
+
+
+###  https://w3id.org/plantvirusontology/Enveloped
+:Enveloped rdf:type owl:Class ;
+           rdfs:subClassOf :LipidicCharacteristic ;
+           rdfs:comment "Virus with envelope" ;
+           rdfs:label "Enveloped" .
+
+
+###  https://w3id.org/plantvirusontology/GeneticMaterial
+:GeneticMaterial rdf:type owl:Class ;
+                 rdfs:subClassOf <http://snomed.info/id/278201002> ;
+                 rdfs:comment "Types of genetic material or its usage" ;
+                 rdfs:label "Genetic Material" .
+
+
+###  https://w3id.org/plantvirusontology/GroupI
+:GroupI rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/C14200> ;
+        rdfs:comment "Baltimore group 1" ;
+        rdfs:label "Group I" .
+
+
+###  https://w3id.org/plantvirusontology/GroupII
+:GroupII rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/C14200> ;
+         rdfs:comment "Baltimore group 2" ;
+         rdfs:label "Group I I" .
+
+
+###  https://w3id.org/plantvirusontology/GroupIII
+:GroupIII rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/C14269> ;
+          rdfs:comment "Baltimore group 3" ;
+          rdfs:label "Group I I I" .
+
+
+###  https://w3id.org/plantvirusontology/GroupIV
+:GroupIV rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/C14269> ;
+         rdfs:comment "Baltimore group 4" ;
+         rdfs:label "Group I V" .
+
+
+###  https://w3id.org/plantvirusontology/GroupV
+:GroupV rdf:type owl:Class ;
+        rdfs:comment "Baltimore group 5" ;
+        rdfs:label "Group V" .
+
+
+###  https://w3id.org/plantvirusontology/GroupVI
+:GroupVI rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/C14269> ,
+                         <http://purl.obolibrary.org/obo/C54085> ;
+         rdfs:comment "Baltimore group 6" ;
+         rdfs:label "Group V I" .
+
+
+###  https://w3id.org/plantvirusontology/GroupVII
+:GroupVII rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.obolibrary.org/obo/C14200> ,
+                          <http://purl.obolibrary.org/obo/C14269> ,
+                          <http://purl.obolibrary.org/obo/C54085> ;
+          rdfs:comment "Baltimore group 7" ;
+          rdfs:label "Group V I I" .
+
+
+###  https://w3id.org/plantvirusontology/Helical
+:Helical rdf:type owl:Class ;
+         rdfs:subClassOf :ViralForm ;
+         rdfs:comment "Virus with helical shape" ;
+         rdfs:label "Helical" .
+
+
+###  https://w3id.org/plantvirusontology/Icosaedral
+:Icosaedral rdf:type owl:Class ;
+            rdfs:subClassOf :ViralForm ;
+            rdfs:comment "Virus with icosaedral shape" ;
+            rdfs:label "Icosaedral" .
+
+
+###  https://w3id.org/plantvirusontology/LipidicCharacteristic
+:LipidicCharacteristic rdf:type owl:Class ;
+                       rdfs:subClassOf <http://snomed.info/id/278201002> ;
+                       rdfs:comment "Lipidic characteristic of a virus, related to its envelope" ;
+                       rdfs:label "Lipidic Characteristic" .
+
+
+###  https://w3id.org/plantvirusontology/NonEnveloped
+:NonEnveloped rdf:type owl:Class ;
+              rdfs:subClassOf :LipidicCharacteristic ;
+              rdfs:comment "Naked virus" ;
+              rdfs:label "Non Enveloped" .
+
+
+###  https://w3id.org/plantvirusontology/PhysicalTransmission
+:PhysicalTransmission rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.obolibrary.org/obo/TRANS_0000000> ;
+                      rdfs:comment "Physical transmission of virus" ;
+                      rdfs:label "Physical Transmission" .
+
+
+###  https://w3id.org/plantvirusontology/PrevalenceAtTime
+:PrevalenceAtTime rdf:type owl:Class ;
+                  rdfs:comment "The prevalence of a virus at a given time in a given country" ;
+                  rdfs:label "Prevalence At Time" .
+
+
+###  https://w3id.org/plantvirusontology/Vector
+:Vector rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C14250> ;
+        rdfs:comment "An organism that transports a virus" ;
+        rdfs:label "Vector" .
+
+
+###  https://w3id.org/plantvirusontology/ViralForm
+:ViralForm rdf:type owl:Class ;
+           rdfs:subClassOf <http://snomed.info/id/278201002> ;
+           rdfs:comment "Types of viral shapes" ;
+           rdfs:label "Viral Form" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :GroupI
+                :GroupII
+                :GroupIII
+                :GroupIV
+                :GroupV
+                :GroupVI
+                :GroupVII
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

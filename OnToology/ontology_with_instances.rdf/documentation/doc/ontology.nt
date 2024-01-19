@@ -1,0 +1,1048 @@
+<https://w3id.org/plantvirusontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/plantvirusontology/> <http://www.w3.org/2002/07/owl#imports> <file:/D:/Descargas/test-data-xlsx.rdf> .
+<https://w3id.org/plantvirusontology/> <http://purl.org/dc/elements/1.1/created> "2024-15-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/plantvirusontology/> <http://purl.org/dc/elements/1.1/creator> "David Garcia" .
+<https://w3id.org/plantvirusontology/> <http://purl.org/dc/elements/1.1/creator> "Joaquin Algorta" .
+<https://w3id.org/plantvirusontology/> <http://purl.org/dc/elements/1.1/description> "An ontology that describes viruses that infect plants" .
+<https://w3id.org/plantvirusontology/> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/plantvirusontology/> <http://purl.org/dc/elements/1.1/title> "Plant Viruses Ontology"@en .
+<https://w3id.org/plantvirusontology/> <http://www.w3.org/2002/07/owl#ontology> <http://nuestra_ontologia#> .
+<https://w3id.org/plantvirusontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<https://w3id.org/plantvirusontology/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#ontology
+<http://www.w3.org/2002/07/owl#ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/NCIT_R41
+<http://purl.obolibrary.org/obo/NCIT_R41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/NCIT_R41> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/hasGene> .
+<http://purl.obolibrary.org/obo/NCIT_R41> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_001383> .
+<http://purl.obolibrary.org/obo/NCIT_R41> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_010379> .
+<http://purl.obolibrary.org/obo/NCIT_R41> <http://www.w3.org/2000/01/rdf-schema#comment> "Gene found in organism" .
+<http://purl.obolibrary.org/obo/NCIT_R41> <http://www.w3.org/2000/01/rdf-schema#label> "n c i t_ r41" .
+# 
+# http://purl.obolibrary.org/obo/RO_0002452
+<http://purl.obolibrary.org/obo/RO_0002452> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0002452> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/isSymptomOf> .
+<http://purl.obolibrary.org/obo/RO_0002452> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Disease> .
+<http://purl.obolibrary.org/obo/RO_0002452> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/HP_0000118> .
+<http://purl.obolibrary.org/obo/RO_0002452> <http://www.w3.org/2000/01/rdf-schema#comment> "Disease has symptom" .
+<http://purl.obolibrary.org/obo/RO_0002452> <http://www.w3.org/2000/01/rdf-schema#label> "r o_0002452" .
+# 
+# http://semanticscience.org/resource/SIO_000062
+<http://semanticscience.org/resource/SIO_000062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_000062> <http://www.w3.org/2002/07/owl#inverseOf> <http://semanticscience.org/resource/SIO_000132> .
+<http://semanticscience.org/resource/SIO_000062> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/CHEBI_52217> .
+<http://semanticscience.org/resource/SIO_000062> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> .
+<http://semanticscience.org/resource/SIO_000062> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug is participant in vector control strategy" .
+<http://semanticscience.org/resource/SIO_000062> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_000062" .
+# 
+# http://semanticscience.org/resource/SIO_000063
+<http://semanticscience.org/resource/SIO_000063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_000063> <http://www.w3.org/2002/07/owl#inverseOf> <http://semanticscience.org/resource/SIO_000139> .
+<http://semanticscience.org/resource/SIO_000063> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+<http://semanticscience.org/resource/SIO_000063> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.bioontology.org/ontology/CSP/4006-0094> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.bioontology.org/ontology/CSP/3099-6564> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000063> <http://www.w3.org/2000/01/rdf-schema#comment> "Protein is agent in virus replication or integration" .
+<http://semanticscience.org/resource/SIO_000063> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_000063" .
+# 
+# http://semanticscience.org/resource/SIO_000132
+<http://semanticscience.org/resource/SIO_000132> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_000132> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> .
+<http://semanticscience.org/resource/SIO_000132> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/CHEBI_52217> .
+<http://semanticscience.org/resource/SIO_000132> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector control strategy has participant drug" .
+<http://semanticscience.org/resource/SIO_000132> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_000132" .
+# 
+# http://semanticscience.org/resource/SIO_000139
+<http://semanticscience.org/resource/SIO_000139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_000139> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.bioontology.org/ontology/CSP/4006-0094> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.bioontology.org/ontology/CSP/3099-6564> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000139> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+<http://semanticscience.org/resource/SIO_000139> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus integration or replication has agent protein" .
+<http://semanticscience.org/resource/SIO_000139> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_000139" .
+# 
+# http://semanticscience.org/resource/SIO_000205
+<http://semanticscience.org/resource/SIO_000205> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_000205> <http://www.w3.org/2002/07/owl#inverseOf> <http://semanticscience.org/resource/SIO_000210> .
+<http://semanticscience.org/resource/SIO_000205> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C16612> .
+<http://semanticscience.org/resource/SIO_000205> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_001383> .
+<http://semanticscience.org/resource/SIO_000205> <http://www.w3.org/2000/01/rdf-schema#comment> "Gene is represented by gene symbol" .
+<http://semanticscience.org/resource/SIO_000205> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_000205" .
+# 
+# http://semanticscience.org/resource/SIO_000210
+<http://semanticscience.org/resource/SIO_000210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_000210> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_001383> .
+<http://semanticscience.org/resource/SIO_000210> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C16612> .
+<http://semanticscience.org/resource/SIO_000210> <http://www.w3.org/2000/01/rdf-schema#comment> "Gene symbol represents gene" .
+<http://semanticscience.org/resource/SIO_000210> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_000210" .
+# 
+# http://semanticscience.org/resource/SIO_001403
+<http://semanticscience.org/resource/SIO_001403> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_001403> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/PrevalenceAtTime> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_001403> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/Climate> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_001403> <http://www.w3.org/2000/01/rdf-schema#comment> "is associated with" .
+<http://semanticscience.org/resource/SIO_001403> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_001403" .
+# 
+# http://semanticscience.org/resource/SIO_010078
+<http://semanticscience.org/resource/SIO_010078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_010078> <http://www.w3.org/2002/07/owl#inverseOf> <http://semanticscience.org/resource/SIO_010079> .
+<http://semanticscience.org/resource/SIO_010078> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C16612> .
+<http://semanticscience.org/resource/SIO_010078> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+<http://semanticscience.org/resource/SIO_010078> <http://www.w3.org/2000/01/rdf-schema#comment> "Gene encodes protein" .
+<http://semanticscience.org/resource/SIO_010078> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_010078" .
+# 
+# http://semanticscience.org/resource/SIO_010079
+<http://semanticscience.org/resource/SIO_010079> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semanticscience.org/resource/SIO_010079> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+<http://semanticscience.org/resource/SIO_010079> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C16612> .
+<http://semanticscience.org/resource/SIO_010079> <http://www.w3.org/2000/01/rdf-schema#comment> "Protein is encoded by gene" .
+<http://semanticscience.org/resource/SIO_010079> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_010079" .
+# 
+# https://w3id.org/plantvirusontology/affectedBy
+<https://w3id.org/plantvirusontology/affectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/affectedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/affects> .
+<https://w3id.org/plantvirusontology/affectedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/MI_0619> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/CARO_0000043> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/affectedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/affectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Tissue or pathway affected by disease" .
+<https://w3id.org/plantvirusontology/affectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "affected by" .
+# 
+# https://w3id.org/plantvirusontology/affects
+<https://w3id.org/plantvirusontology/affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/affects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/affects> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/MI_0619> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/CARO_0000043> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/affects> <http://www.w3.org/2000/01/rdf-schema#comment> "Disease affects tissue or pathway" .
+<https://w3id.org/plantvirusontology/affects> <http://www.w3.org/2000/01/rdf-schema#label> "affects" .
+# 
+# https://w3id.org/plantvirusontology/affectsPlant
+<https://w3id.org/plantvirusontology/affectsPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/affectsPlant> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/hasDisease> .
+<https://w3id.org/plantvirusontology/affectsPlant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/affectsPlant> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/affectsPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "Disease affects plant" .
+<https://w3id.org/plantvirusontology/affectsPlant> <http://www.w3.org/2000/01/rdf-schema#label> "affects plant" .
+# 
+# https://w3id.org/plantvirusontology/approvedIn
+<https://w3id.org/plantvirusontology/approvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/approvedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/hasApprovedDrug> .
+<https://w3id.org/plantvirusontology/approvedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/approvedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/approvedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug approved in country" .
+<https://w3id.org/plantvirusontology/approvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "approved in" .
+# 
+# https://w3id.org/plantvirusontology/belongsTo
+<https://w3id.org/plantvirusontology/belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/belongsTo> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/contains> .
+<https://w3id.org/plantvirusontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C25160> .
+<https://w3id.org/plantvirusontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "City belongs to country" .
+<https://w3id.org/plantvirusontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to" .
+# 
+# https://w3id.org/plantvirusontology/commercializedBy
+<https://w3id.org/plantvirusontology/commercializedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/commercializedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/commercializes> .
+<https://w3id.org/plantvirusontology/commercializedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/commercializedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Company> .
+<https://w3id.org/plantvirusontology/commercializedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug commercialized by company" .
+<https://w3id.org/plantvirusontology/commercializedBy> <http://www.w3.org/2000/01/rdf-schema#label> "commercialized by" .
+# 
+# https://w3id.org/plantvirusontology/commercializes
+<https://w3id.org/plantvirusontology/commercializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/commercializes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Company> .
+<https://w3id.org/plantvirusontology/commercializes> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/commercializes> <http://www.w3.org/2000/01/rdf-schema#comment> "Company commercializes drug" .
+<https://w3id.org/plantvirusontology/commercializes> <http://www.w3.org/2000/01/rdf-schema#label> "commercializes" .
+# 
+# https://w3id.org/plantvirusontology/contains
+<https://w3id.org/plantvirusontology/contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/contains> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25160> .
+<https://w3id.org/plantvirusontology/contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Country contains city" .
+<https://w3id.org/plantvirusontology/contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains" .
+# 
+# https://w3id.org/plantvirusontology/employedByDrug
+<https://w3id.org/plantvirusontology/employedByDrug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/employedByDrug> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/hasDrugMechanism> .
+<https://w3id.org/plantvirusontology/employedByDrug> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/AgainstTheVirus> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/AgainstTheTransmission> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/AgainstTheDisease> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/employedByDrug> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/employedByDrug> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug mechanism employed by drug" .
+<https://w3id.org/plantvirusontology/employedByDrug> <http://www.w3.org/2000/01/rdf-schema#label> "employed by drug" .
+# 
+# https://w3id.org/plantvirusontology/employedByVirus
+<https://w3id.org/plantvirusontology/employedByVirus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/employedByVirus> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/hasInfectionMechanism> .
+<https://w3id.org/plantvirusontology/employedByVirus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.bioontology.org/ontology/CSP/3099-7852> .
+<https://w3id.org/plantvirusontology/employedByVirus> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/employedByVirus> <http://www.w3.org/2000/01/rdf-schema#comment> "Infection mechanism employed by virus" .
+<https://w3id.org/plantvirusontology/employedByVirus> <http://www.w3.org/2000/01/rdf-schema#label> "employed by virus" .
+# 
+# https://w3id.org/plantvirusontology/hasApprovedDrug
+<https://w3id.org/plantvirusontology/hasApprovedDrug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasApprovedDrug> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/hasApprovedDrug> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/hasApprovedDrug> <http://www.w3.org/2000/01/rdf-schema#comment> "Country has approved drug" .
+<https://w3id.org/plantvirusontology/hasApprovedDrug> <http://www.w3.org/2000/01/rdf-schema#label> "has approved drug" .
+# 
+# https://w3id.org/plantvirusontology/hasBaltimoreGroup
+<https://w3id.org/plantvirusontology/hasBaltimoreGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasBaltimoreGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasBaltimoreGroup> <http://www.w3.org/2000/01/rdf-schema#range> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#unionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupVII> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupVI> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupV> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupIV> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupIII> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupII> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupI> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasBaltimoreGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has Baltimore group" .
+<https://w3id.org/plantvirusontology/hasBaltimoreGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has baltimore group" .
+# 
+# https://w3id.org/plantvirusontology/hasBorderWith
+<https://w3id.org/plantvirusontology/hasBorderWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasBorderWith> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/hasBorderWith> .
+<https://w3id.org/plantvirusontology/hasBorderWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://w3id.org/plantvirusontology/hasBorderWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/hasBorderWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/hasBorderWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Country has border with country" .
+<https://w3id.org/plantvirusontology/hasBorderWith> <http://www.w3.org/2000/01/rdf-schema#label> "has border with" .
+# 
+# https://w3id.org/plantvirusontology/hasControlStrategy
+<https://w3id.org/plantvirusontology/hasControlStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasControlStrategy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/usedForVector> .
+<https://w3id.org/plantvirusontology/hasControlStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Vector> .
+<https://w3id.org/plantvirusontology/hasControlStrategy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> .
+<https://w3id.org/plantvirusontology/hasControlStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector has control strategy" .
+<https://w3id.org/plantvirusontology/hasControlStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "has control strategy" .
+# 
+# https://w3id.org/plantvirusontology/hasDisease
+<https://w3id.org/plantvirusontology/hasDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/hasDisease> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/hasDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant has disease" .
+<https://w3id.org/plantvirusontology/hasDisease> <http://www.w3.org/2000/01/rdf-schema#label> "has disease" .
+# 
+# https://w3id.org/plantvirusontology/hasDrugMechanism
+<https://w3id.org/plantvirusontology/hasDrugMechanism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasDrugMechanism> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/hasDrugMechanism> <http://www.w3.org/2000/01/rdf-schema#range> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/AgainstTheVirus> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/AgainstTheTransmission> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/AgainstTheDisease> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasDrugMechanism> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug has drug mechanism" .
+<https://w3id.org/plantvirusontology/hasDrugMechanism> <http://www.w3.org/2000/01/rdf-schema#label> "has drug mechanism" .
+# 
+# https://w3id.org/plantvirusontology/hasGene
+<https://w3id.org/plantvirusontology/hasGene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasGene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasGene> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_001383> .
+<https://w3id.org/plantvirusontology/hasGene> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has gene" .
+<https://w3id.org/plantvirusontology/hasGene> <http://www.w3.org/2000/01/rdf-schema#label> "has gene" .
+# 
+# https://w3id.org/plantvirusontology/hasHeadquartersOf
+<https://w3id.org/plantvirusontology/hasHeadquartersOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasHeadquartersOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/headquartersIn> .
+<https://w3id.org/plantvirusontology/hasHeadquartersOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C25160> .
+<https://w3id.org/plantvirusontology/hasHeadquartersOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Company> .
+<https://w3id.org/plantvirusontology/hasHeadquartersOf> <http://www.w3.org/2000/01/rdf-schema#comment> "City has headquarters of company" .
+<https://w3id.org/plantvirusontology/hasHeadquartersOf> <http://www.w3.org/2000/01/rdf-schema#label> "has headquarters of" .
+# 
+# https://w3id.org/plantvirusontology/hasInfectionMechanism
+<https://w3id.org/plantvirusontology/hasInfectionMechanism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasInfectionMechanism> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasInfectionMechanism> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.bioontology.org/ontology/CSP/3099-7852> .
+<https://w3id.org/plantvirusontology/hasInfectionMechanism> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has infection mechanism" .
+<https://w3id.org/plantvirusontology/hasInfectionMechanism> <http://www.w3.org/2000/01/rdf-schema#label> "has infection mechanism" .
+# 
+# https://w3id.org/plantvirusontology/hasLipidicClassification
+<https://w3id.org/plantvirusontology/hasLipidicClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasLipidicClassification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasLipidicClassification> <http://www.w3.org/2000/01/rdf-schema#range> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#unionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/NonEnveloped> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/Enveloped> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasLipidicClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has lipidic classification" .
+<https://w3id.org/plantvirusontology/hasLipidicClassification> <http://www.w3.org/2000/01/rdf-schema#label> "has lipidic classification" .
+# 
+# https://w3id.org/plantvirusontology/hasPrevalence
+<https://w3id.org/plantvirusontology/hasPrevalence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasPrevalence> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/prevalenceOfVirus> .
+<https://w3id.org/plantvirusontology/hasPrevalence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasPrevalence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/PrevalenceAtTime> .
+<https://w3id.org/plantvirusontology/hasPrevalence> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has prevalence" .
+<https://w3id.org/plantvirusontology/hasPrevalence> <http://www.w3.org/2000/01/rdf-schema#label> "has prevalence" .
+# 
+# https://w3id.org/plantvirusontology/hasReservoir
+<https://w3id.org/plantvirusontology/hasReservoir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasReservoir> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/isReservoirFor> .
+<https://w3id.org/plantvirusontology/hasReservoir> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasReservoir> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/hasReservoir> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has reservoir in organism" .
+<https://w3id.org/plantvirusontology/hasReservoir> <http://www.w3.org/2000/01/rdf-schema#label> "has reservoir" .
+# 
+# https://w3id.org/plantvirusontology/hasShape
+<https://w3id.org/plantvirusontology/hasShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasShape> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasShape> <http://www.w3.org/2000/01/rdf-schema#range> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/Icosaedral> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/Helical> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/Complex> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has shape" .
+<https://w3id.org/plantvirusontology/hasShape> <http://www.w3.org/2000/01/rdf-schema#label> "has shape" .
+# 
+# https://w3id.org/plantvirusontology/hasTarget
+<https://w3id.org/plantvirusontology/hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasTarget> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/targettedBy> .
+<https://w3id.org/plantvirusontology/hasTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/hasTarget> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus has target plant" .
+<https://w3id.org/plantvirusontology/hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "has target" .
+# 
+# https://w3id.org/plantvirusontology/hasVector
+<https://w3id.org/plantvirusontology/hasVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/hasVector> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/isVectorOf> .
+<https://w3id.org/plantvirusontology/hasVector> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/BiologicalTransmission> .
+<https://w3id.org/plantvirusontology/hasVector> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Vector> .
+<https://w3id.org/plantvirusontology/hasVector> <http://www.w3.org/2000/01/rdf-schema#comment> "Biological transmission has vector" .
+<https://w3id.org/plantvirusontology/hasVector> <http://www.w3.org/2000/01/rdf-schema#label> "has vector" .
+# 
+# https://w3id.org/plantvirusontology/headquartersIn
+<https://w3id.org/plantvirusontology/headquartersIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/headquartersIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Company> .
+<https://w3id.org/plantvirusontology/headquartersIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25160> .
+<https://w3id.org/plantvirusontology/headquartersIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Company has headquarters in city" .
+<https://w3id.org/plantvirusontology/headquartersIn> <http://www.w3.org/2000/01/rdf-schema#label> "headquarters in" .
+# 
+# https://w3id.org/plantvirusontology/interactsWithDrug
+<https://w3id.org/plantvirusontology/interactsWithDrug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/interactsWithDrug> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/interactsWithProtein> .
+<https://w3id.org/plantvirusontology/interactsWithDrug> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+<https://w3id.org/plantvirusontology/interactsWithDrug> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/interactsWithDrug> <http://www.w3.org/2000/01/rdf-schema#comment> "Protein interacts with drug" .
+<https://w3id.org/plantvirusontology/interactsWithDrug> <http://www.w3.org/2000/01/rdf-schema#label> "interacts with drug" .
+# 
+# https://w3id.org/plantvirusontology/interactsWithProtein
+<https://w3id.org/plantvirusontology/interactsWithProtein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/interactsWithProtein> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/interactsWithProtein> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+<https://w3id.org/plantvirusontology/interactsWithProtein> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug interacts with protein" .
+<https://w3id.org/plantvirusontology/interactsWithProtein> <http://www.w3.org/2000/01/rdf-schema#label> "interacts with protein" .
+# 
+# https://w3id.org/plantvirusontology/isReservoirFor
+<https://w3id.org/plantvirusontology/isReservoirFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/isReservoirFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/isReservoirFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/isReservoirFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Organism is reservoir for virus" .
+<https://w3id.org/plantvirusontology/isReservoirFor> <http://www.w3.org/2000/01/rdf-schema#label> "is reservoir for" .
+# 
+# https://w3id.org/plantvirusontology/isSymptomOf
+<https://w3id.org/plantvirusontology/isSymptomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/isSymptomOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/HP_0000118> .
+<https://w3id.org/plantvirusontology/isSymptomOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/isSymptomOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Symptom is symptom of disease" .
+<https://w3id.org/plantvirusontology/isSymptomOf> <http://www.w3.org/2000/01/rdf-schema#label> "is symptom of" .
+# 
+# https://w3id.org/plantvirusontology/isVectorOf
+<https://w3id.org/plantvirusontology/isVectorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/isVectorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Vector> .
+<https://w3id.org/plantvirusontology/isVectorOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/BiologicalTransmission> .
+<https://w3id.org/plantvirusontology/isVectorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector is vector of biological transmission" .
+<https://w3id.org/plantvirusontology/isVectorOf> <http://www.w3.org/2000/01/rdf-schema#label> "is vector of" .
+# 
+# https://w3id.org/plantvirusontology/locatedAt
+<https://w3id.org/plantvirusontology/locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/locatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/locatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Climate> .
+<https://w3id.org/plantvirusontology/locatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant located at climate" .
+<https://w3id.org/plantvirusontology/locatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "located at" .
+# 
+# https://w3id.org/plantvirusontology/plantLocatedAt
+<https://w3id.org/plantvirusontology/plantLocatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/plantLocatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/plantLocatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/plantLocatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant located at country" .
+<https://w3id.org/plantvirusontology/plantLocatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "plant located at" .
+# 
+# https://w3id.org/plantvirusontology/prevalenceOfVirus
+<https://w3id.org/plantvirusontology/prevalenceOfVirus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/prevalenceOfVirus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/PrevalenceAtTime> .
+<https://w3id.org/plantvirusontology/prevalenceOfVirus> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/prevalenceOfVirus> <http://www.w3.org/2000/01/rdf-schema#comment> "Prevalence of virus" .
+<https://w3id.org/plantvirusontology/prevalenceOfVirus> <http://www.w3.org/2000/01/rdf-schema#label> "prevalence of virus" .
+# 
+# https://w3id.org/plantvirusontology/targettedBy
+<https://w3id.org/plantvirusontology/targettedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/targettedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/targettedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/targettedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant targetted by virus" .
+<https://w3id.org/plantvirusontology/targettedBy> <http://www.w3.org/2000/01/rdf-schema#label> "targetted by" .
+# 
+# https://w3id.org/plantvirusontology/transmitsVirus
+<https://w3id.org/plantvirusontology/transmitsVirus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/transmitsVirus> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/transmittedBy> .
+<https://w3id.org/plantvirusontology/transmitsVirus> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#unionOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/PhysicalTransmission> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/BiologicalTransmission> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/transmitsVirus> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/transmitsVirus> <http://www.w3.org/2000/01/rdf-schema#comment> "Biological or physical transmission tranmits virus" .
+<https://w3id.org/plantvirusontology/transmitsVirus> <http://www.w3.org/2000/01/rdf-schema#label> "transmits virus" .
+# 
+# https://w3id.org/plantvirusontology/transmittedBy
+<https://w3id.org/plantvirusontology/transmittedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/transmittedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/transmittedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/PhysicalTransmission> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/BiologicalTransmission> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/transmittedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus transmitted by physical or biological transmission" .
+<https://w3id.org/plantvirusontology/transmittedBy> <http://www.w3.org/2000/01/rdf-schema#label> "transmitted by" .
+# 
+# https://w3id.org/plantvirusontology/treatedBy
+<https://w3id.org/plantvirusontology/treatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/treatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/plantvirusontology/treatsDisease> .
+<https://w3id.org/plantvirusontology/treatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/treatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/treatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Disease treated by drug" .
+<https://w3id.org/plantvirusontology/treatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "treated by" .
+# 
+# https://w3id.org/plantvirusontology/treatsDisease
+<https://w3id.org/plantvirusontology/treatsDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/treatsDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Drug> .
+<https://w3id.org/plantvirusontology/treatsDisease> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/treatsDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug treats disease" .
+<https://w3id.org/plantvirusontology/treatsDisease> <http://www.w3.org/2000/01/rdf-schema#label> "treats disease" .
+# 
+# https://w3id.org/plantvirusontology/usedForVector
+<https://w3id.org/plantvirusontology/usedForVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/usedForVector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/APOLLO_SV_00000308> .
+<https://w3id.org/plantvirusontology/usedForVector> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/plantvirusontology/Vector> .
+<https://w3id.org/plantvirusontology/usedForVector> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector control strategy used for vector" .
+<https://w3id.org/plantvirusontology/usedForVector> <http://www.w3.org/2000/01/rdf-schema#label> "used for vector" .
+# 
+# https://w3id.org/plantvirusontology/virusLocatedAt
+<https://w3id.org/plantvirusontology/virusLocatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/plantvirusontology/virusLocatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticscience.org/resource/SIO_010379> .
+<https://w3id.org/plantvirusontology/virusLocatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/NCIT_C25464> .
+<https://w3id.org/plantvirusontology/virusLocatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus located at country" .
+<https://w3id.org/plantvirusontology/virusLocatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "virus located at" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/OPMI_0000481
+<http://purl.obolibrary.org/obo/OPMI_0000481> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.obolibrary.org/obo/OPMI_0000481> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#unionOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://semanticscience.org/resource/SIO_010379> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OPMI_0000481> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.obolibrary.org/obo/OPMI_0000481> <http://www.w3.org/2000/01/rdf-schema#comment> "has identifier" .
+<http://purl.obolibrary.org/obo/OPMI_0000481> <http://www.w3.org/2000/01/rdf-schema#label> "o p m i_0000481" .
+# 
+# http://semanticscience.org/resource/SIO_000300
+<http://semanticscience.org/resource/SIO_000300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://semanticscience.org/resource/SIO_000300> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/PrevalenceAtTime> .
+<http://semanticscience.org/resource/SIO_000300> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://semanticscience.org/resource/SIO_000300> <http://www.w3.org/2000/01/rdf-schema#comment> "has value" .
+<http://semanticscience.org/resource/SIO_000300> <http://www.w3.org/2000/01/rdf-schema#label> "s i o_000300" .
+# 
+# https://w3id.org/plantvirusontology/affectsSurvival
+<https://w3id.org/plantvirusontology/affectsSurvival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/plantvirusontology/affectsSurvival> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/affectsSurvival> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/plantvirusontology/affectsSurvival> <http://www.w3.org/2000/01/rdf-schema#comment> "How a disease affects the survival of a plant species, expressed as a fraction of 1" .
+<https://w3id.org/plantvirusontology/affectsSurvival> <http://www.w3.org/2000/01/rdf-schema#label> "affects survival" .
+# 
+# https://w3id.org/plantvirusontology/affectsYield
+<https://w3id.org/plantvirusontology/affectsYield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/plantvirusontology/affectsYield> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/Disease> .
+<https://w3id.org/plantvirusontology/affectsYield> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/plantvirusontology/affectsYield> <http://www.w3.org/2000/01/rdf-schema#comment> "How a disease affects the yield of a plant species, expressed as a fraction of 1" .
+<https://w3id.org/plantvirusontology/affectsYield> <http://www.w3.org/2000/01/rdf-schema#label> "affects yield" .
+# 
+# https://w3id.org/plantvirusontology/atDate
+<https://w3id.org/plantvirusontology/atDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/plantvirusontology/atDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/plantvirusontology/PrevalenceAtTime> .
+<https://w3id.org/plantvirusontology/atDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/plantvirusontology/atDate> <http://www.w3.org/2000/01/rdf-schema#comment> "prevalence at date" .
+<https://w3id.org/plantvirusontology/atDate> <http://www.w3.org/2000/01/rdf-schema#label> "at date" .
+# 
+# https://w3id.org/plantvirusontology/hasCommonName
+<https://w3id.org/plantvirusontology/hasCommonName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/plantvirusontology/hasCommonName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#unionOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://semanticscience.org/resource/SIO_010379> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasCommonName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/plantvirusontology/hasCommonName> <http://www.w3.org/2000/01/rdf-schema#comment> "Common name for virus or plant" .
+<https://w3id.org/plantvirusontology/hasCommonName> <http://www.w3.org/2000/01/rdf-schema#label> "has common name" .
+# 
+# https://w3id.org/plantvirusontology/hasLength
+<https://w3id.org/plantvirusontology/hasLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/plantvirusontology/hasLength> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#unionOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C16612> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/plantvirusontology/hasLength> <http://www.w3.org/2000/01/rdf-schema#comment> "Length of gene or protein" .
+<https://w3id.org/plantvirusontology/hasLength> <http://www.w3.org/2000/01/rdf-schema#label> "has length" .
+# 
+# https://w3id.org/plantvirusontology/hasSequence
+<https://w3id.org/plantvirusontology/hasSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/plantvirusontology/hasSequence> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#unionOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C17021> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C16612> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasSequence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/plantvirusontology/hasSequence> <http://www.w3.org/2000/01/rdf-schema#comment> "Sequence of gene or protein" .
+<https://w3id.org/plantvirusontology/hasSequence> <http://www.w3.org/2000/01/rdf-schema#label> "has sequence" .
+# 
+# https://w3id.org/plantvirusontology/hasTemporality
+<https://w3id.org/plantvirusontology/hasTemporality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/plantvirusontology/hasTemporality> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#unionOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://semanticscience.org/resource/SIO_010379> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/hasTemporality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/plantvirusontology/hasTemporality> <http://www.w3.org/2000/01/rdf-schema#comment> "Temporality of plant or virus, seasonal, all-year-long..." .
+<https://w3id.org/plantvirusontology/hasTemporality> <http://www.w3.org/2000/01/rdf-schema#label> "has temporality" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.bioontology.org/ontology/CSP/3099-6564
+<http://purl.bioontology.org/ontology/CSP/3099-6564> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CSP/3099-6564> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/3099-7852> .
+<http://purl.bioontology.org/ontology/CSP/3099-6564> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus with replication mechanism" .
+<http://purl.bioontology.org/ontology/CSP/3099-6564> <http://www.w3.org/2000/01/rdf-schema#label> "3099-6564" .
+# 
+# http://purl.bioontology.org/ontology/CSP/3099-7852
+<http://purl.bioontology.org/ontology/CSP/3099-7852> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CSP/3099-7852> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of virus infection mechanisms" .
+<http://purl.bioontology.org/ontology/CSP/3099-7852> <http://www.w3.org/2000/01/rdf-schema#label> "3099-7852" .
+# 
+# http://purl.bioontology.org/ontology/CSP/4006-0094
+<http://purl.bioontology.org/ontology/CSP/4006-0094> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CSP/4006-0094> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/3099-7852> .
+<http://purl.bioontology.org/ontology/CSP/4006-0094> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus with integration mechanism" .
+<http://purl.bioontology.org/ontology/CSP/4006-0094> <http://www.w3.org/2000/01/rdf-schema#label> "4006-0094" .
+# 
+# http://purl.obolibrary.org/obo/APOLLO_SV_00000308
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000308> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000308> <http://www.w3.org/2000/01/rdf-schema#comment> "Strategies for the control of viral vectors" .
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000308> <http://www.w3.org/2000/01/rdf-schema#label> "A P O L L O_ S V_00000308" .
+# 
+# http://purl.obolibrary.org/obo/C14200
+<http://purl.obolibrary.org/obo/C14200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/C14200> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/GeneticMaterial> .
+<http://purl.obolibrary.org/obo/C14200> <http://www.w3.org/2000/01/rdf-schema#comment> "DNA virus" .
+<http://purl.obolibrary.org/obo/C14200> <http://www.w3.org/2000/01/rdf-schema#label> "C14200" .
+# 
+# http://purl.obolibrary.org/obo/C14269
+<http://purl.obolibrary.org/obo/C14269> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/C14269> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/GeneticMaterial> .
+<http://purl.obolibrary.org/obo/C14269> <http://www.w3.org/2000/01/rdf-schema#comment> "RNA virus" .
+<http://purl.obolibrary.org/obo/C14269> <http://www.w3.org/2000/01/rdf-schema#label> "C14269" .
+# 
+# http://purl.obolibrary.org/obo/C14336
+<http://purl.obolibrary.org/obo/C14336> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/C14336> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<http://purl.obolibrary.org/obo/C14336> <http://www.w3.org/2000/01/rdf-schema#comment> "Vascular plants" .
+<http://purl.obolibrary.org/obo/C14336> <http://www.w3.org/2000/01/rdf-schema#label> "C14336" .
+# 
+# http://purl.obolibrary.org/obo/C14340
+<http://purl.obolibrary.org/obo/C14340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/C14340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<http://purl.obolibrary.org/obo/C14340> <http://www.w3.org/2000/01/rdf-schema#comment> "Non-vascular plants" .
+<http://purl.obolibrary.org/obo/C14340> <http://www.w3.org/2000/01/rdf-schema#label> "C14340" .
+# 
+# http://purl.obolibrary.org/obo/C54085
+<http://purl.obolibrary.org/obo/C54085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/C54085> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/GeneticMaterial> .
+<http://purl.obolibrary.org/obo/C54085> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus with retrotranscriptase activity" .
+<http://purl.obolibrary.org/obo/C54085> <http://www.w3.org/2000/01/rdf-schema#label> "C54085" .
+# 
+# http://purl.obolibrary.org/obo/C86587
+<http://purl.obolibrary.org/obo/C86587> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/C86587> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<http://purl.obolibrary.org/obo/C86587> <http://www.w3.org/2000/01/rdf-schema#comment> "Algae" .
+<http://purl.obolibrary.org/obo/C86587> <http://www.w3.org/2000/01/rdf-schema#label> "C86587" .
+# 
+# http://purl.obolibrary.org/obo/CARO_0000043
+<http://purl.obolibrary.org/obo/CARO_0000043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CARO_0000043> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant tissues" .
+<http://purl.obolibrary.org/obo/CARO_0000043> <http://www.w3.org/2000/01/rdf-schema#label> "C A R O_0000043" .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_52217
+<http://purl.obolibrary.org/obo/CHEBI_52217> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CHEBI_52217> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/plantvirusontology/Drug> .
+<http://purl.obolibrary.org/obo/CHEBI_52217> <http://www.w3.org/2000/01/rdf-schema#comment> "Pharmaceutical" .
+<http://purl.obolibrary.org/obo/CHEBI_52217> <http://www.w3.org/2000/01/rdf-schema#label> "C H E B I_52217" .
+# 
+# http://purl.obolibrary.org/obo/HP_0000118
+<http://purl.obolibrary.org/obo/HP_0000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/HP_0000118> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TO_0000387> .
+<http://purl.obolibrary.org/obo/HP_0000118> <http://www.w3.org/2000/01/rdf-schema#comment> "Phenotipic abnormality" .
+<http://purl.obolibrary.org/obo/HP_0000118> <http://www.w3.org/2000/01/rdf-schema#label> "H P_0000118" .
+# 
+# http://purl.obolibrary.org/obo/MI_0619
+<http://purl.obolibrary.org/obo/MI_0619> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MI_0619> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant molecular pathways" .
+<http://purl.obolibrary.org/obo/MI_0619> <http://www.w3.org/2000/01/rdf-schema#label> "M I_0619" .
+# 
+# http://purl.obolibrary.org/obo/MI_2044
+<http://purl.obolibrary.org/obo/MI_2044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MI_2044> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of drug mechanisms" .
+<http://purl.obolibrary.org/obo/MI_2044> <http://www.w3.org/2000/01/rdf-schema#label> "M I_2044" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C14250
+<http://purl.obolibrary.org/obo/NCIT_C14250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C14250> <http://www.w3.org/2000/01/rdf-schema#comment> "Organism, can be plant, vector..." .
+<http://purl.obolibrary.org/obo/NCIT_C14250> <http://www.w3.org/2000/01/rdf-schema#label> "N C I T_ C14250" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C16612
+<http://purl.obolibrary.org/obo/NCIT_C16612> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C16612> <http://www.w3.org/2000/01/rdf-schema#comment> "Gene" .
+<http://purl.obolibrary.org/obo/NCIT_C16612> <http://www.w3.org/2000/01/rdf-schema#label> "N C I T_ C16612" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C17021
+<http://purl.obolibrary.org/obo/NCIT_C17021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C17021> <http://www.w3.org/2000/01/rdf-schema#comment> "Protein" .
+<http://purl.obolibrary.org/obo/NCIT_C17021> <http://www.w3.org/2000/01/rdf-schema#label> "N C I T_ C17021" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C25160
+<http://purl.obolibrary.org/obo/NCIT_C25160> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25160> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/plantvirusontology/belongsTo> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.obolibrary.org/obo/NCIT_C25160> <http://www.w3.org/2000/01/rdf-schema#comment> "City" .
+<http://purl.obolibrary.org/obo/NCIT_C25160> <http://www.w3.org/2000/01/rdf-schema#label> "N C I T_ C25160" .
+# 
+# http://purl.obolibrary.org/obo/NCIT_C25464
+<http://purl.obolibrary.org/obo/NCIT_C25464> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25464> <http://www.w3.org/2000/01/rdf-schema#comment> "Country" .
+<http://purl.obolibrary.org/obo/NCIT_C25464> <http://www.w3.org/2000/01/rdf-schema#label> "N C I T_ C25464" .
+# 
+# http://purl.obolibrary.org/obo/TO_0000387
+<http://purl.obolibrary.org/obo/TO_0000387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TO_0000387> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant phenotype" .
+<http://purl.obolibrary.org/obo/TO_0000387> <http://www.w3.org/2000/01/rdf-schema#label> "T O_0000387" .
+# 
+# http://purl.obolibrary.org/obo/TRANS_0000000
+<http://purl.obolibrary.org/obo/TRANS_0000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRANS_0000000> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of viral transmission" .
+<http://purl.obolibrary.org/obo/TRANS_0000000> <http://www.w3.org/2000/01/rdf-schema#label> "T R A N S_0000000" .
+# 
+# http://semanticscience.org/resource/SIO_001383
+<http://semanticscience.org/resource/SIO_001383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_001383> <http://www.w3.org/2000/01/rdf-schema#comment> "Gene symbol" .
+<http://semanticscience.org/resource/SIO_001383> <http://www.w3.org/2000/01/rdf-schema#label> "S I O_001383" .
+# 
+# http://semanticscience.org/resource/SIO_010379
+<http://semanticscience.org/resource/SIO_010379> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_010379> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/plantvirusontology/hasTarget> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://semanticscience.org/resource/SIO_010379> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/plantvirusontology/hasBaltimoreGroup> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://semanticscience.org/resource/SIO_010379> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/plantvirusontology/hasLipidicClassification> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://semanticscience.org/resource/SIO_010379> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/plantvirusontology/hasShape> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://semanticscience.org/resource/SIO_010379> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus" .
+<http://semanticscience.org/resource/SIO_010379> <http://www.w3.org/2000/01/rdf-schema#label> "S I O_010379" .
+# 
+# http://snomed.info/id/278201002
+<http://snomed.info/id/278201002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://snomed.info/id/278201002> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of classifications of virus" .
+<http://snomed.info/id/278201002> <http://www.w3.org/2000/01/rdf-schema#label> "278201002" .
+# 
+# https://w3id.org/plantvirusontology/AgainstTheDisease
+<https://w3id.org/plantvirusontology/AgainstTheDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/AgainstTheDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/MI_2044> .
+<https://w3id.org/plantvirusontology/AgainstTheDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "Drugs affecting the disease caused by a virus" .
+<https://w3id.org/plantvirusontology/AgainstTheDisease> <http://www.w3.org/2000/01/rdf-schema#label> "Against The Disease" .
+# 
+# https://w3id.org/plantvirusontology/AgainstTheTransmission
+<https://w3id.org/plantvirusontology/AgainstTheTransmission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/AgainstTheTransmission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/MI_2044> .
+<https://w3id.org/plantvirusontology/AgainstTheTransmission> <http://www.w3.org/2000/01/rdf-schema#comment> "Drugs affecting the transmission of a virus" .
+<https://w3id.org/plantvirusontology/AgainstTheTransmission> <http://www.w3.org/2000/01/rdf-schema#label> "Against The Transmission" .
+# 
+# https://w3id.org/plantvirusontology/AgainstTheVirus
+<https://w3id.org/plantvirusontology/AgainstTheVirus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/AgainstTheVirus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/MI_2044> .
+<https://w3id.org/plantvirusontology/AgainstTheVirus> <http://www.w3.org/2000/01/rdf-schema#comment> "Drugs affecting the virus itself" .
+<https://w3id.org/plantvirusontology/AgainstTheVirus> <http://www.w3.org/2000/01/rdf-schema#label> "Against The Virus" .
+# 
+# https://w3id.org/plantvirusontology/BiologicalTransmission
+<https://w3id.org/plantvirusontology/BiologicalTransmission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/BiologicalTransmission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRANS_0000000> .
+<https://w3id.org/plantvirusontology/BiologicalTransmission> <http://www.w3.org/2000/01/rdf-schema#comment> "Biological transmission of virus" .
+<https://w3id.org/plantvirusontology/BiologicalTransmission> <http://www.w3.org/2000/01/rdf-schema#label> "Biological Transmission" .
+# 
+# https://w3id.org/plantvirusontology/Climate
+<https://w3id.org/plantvirusontology/Climate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Climate> <http://www.w3.org/2000/01/rdf-schema#comment> "Different types of climates" .
+<https://w3id.org/plantvirusontology/Climate> <http://www.w3.org/2000/01/rdf-schema#label> "Climate" .
+# 
+# https://w3id.org/plantvirusontology/Company
+<https://w3id.org/plantvirusontology/Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/plantvirusontology/headquartersIn> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/plantvirusontology/Company> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug-selling companies" .
+<https://w3id.org/plantvirusontology/Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company" .
+# 
+# https://w3id.org/plantvirusontology/Complex
+<https://w3id.org/plantvirusontology/Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Complex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/ViralForm> .
+<https://w3id.org/plantvirusontology/Complex> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus with complex viral shape" .
+<https://w3id.org/plantvirusontology/Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Complex" .
+# 
+# https://w3id.org/plantvirusontology/Disease
+<https://w3id.org/plantvirusontology/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus-produced diseases in plants" .
+<https://w3id.org/plantvirusontology/Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+# 
+# https://w3id.org/plantvirusontology/Drug
+<https://w3id.org/plantvirusontology/Drug> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Drug> <http://www.w3.org/2000/01/rdf-schema#comment> "Drug used in plants against virus" .
+<https://w3id.org/plantvirusontology/Drug> <http://www.w3.org/2000/01/rdf-schema#label> "Drug" .
+# 
+# https://w3id.org/plantvirusontology/Enveloped
+<https://w3id.org/plantvirusontology/Enveloped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Enveloped> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/LipidicCharacteristic> .
+<https://w3id.org/plantvirusontology/Enveloped> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus with envelope" .
+<https://w3id.org/plantvirusontology/Enveloped> <http://www.w3.org/2000/01/rdf-schema#label> "Enveloped" .
+# 
+# https://w3id.org/plantvirusontology/GeneticMaterial
+<https://w3id.org/plantvirusontology/GeneticMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GeneticMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://snomed.info/id/278201002> .
+<https://w3id.org/plantvirusontology/GeneticMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of genetic material or its usage" .
+<https://w3id.org/plantvirusontology/GeneticMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Genetic Material" .
+# 
+# https://w3id.org/plantvirusontology/GroupI
+<https://w3id.org/plantvirusontology/GroupI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GroupI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C14200> .
+<https://w3id.org/plantvirusontology/GroupI> <http://www.w3.org/2000/01/rdf-schema#comment> "Baltimore group 1" .
+<https://w3id.org/plantvirusontology/GroupI> <http://www.w3.org/2000/01/rdf-schema#label> "Group I" .
+# 
+# https://w3id.org/plantvirusontology/GroupII
+<https://w3id.org/plantvirusontology/GroupII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GroupII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C14200> .
+<https://w3id.org/plantvirusontology/GroupII> <http://www.w3.org/2000/01/rdf-schema#comment> "Baltimore group 2" .
+<https://w3id.org/plantvirusontology/GroupII> <http://www.w3.org/2000/01/rdf-schema#label> "Group I I" .
+# 
+# https://w3id.org/plantvirusontology/GroupIII
+<https://w3id.org/plantvirusontology/GroupIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GroupIII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C14269> .
+<https://w3id.org/plantvirusontology/GroupIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Baltimore group 3" .
+<https://w3id.org/plantvirusontology/GroupIII> <http://www.w3.org/2000/01/rdf-schema#label> "Group I I I" .
+# 
+# https://w3id.org/plantvirusontology/GroupIV
+<https://w3id.org/plantvirusontology/GroupIV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GroupIV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C14269> .
+<https://w3id.org/plantvirusontology/GroupIV> <http://www.w3.org/2000/01/rdf-schema#comment> "Baltimore group 4" .
+<https://w3id.org/plantvirusontology/GroupIV> <http://www.w3.org/2000/01/rdf-schema#label> "Group I V" .
+# 
+# https://w3id.org/plantvirusontology/GroupV
+<https://w3id.org/plantvirusontology/GroupV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GroupV> <http://www.w3.org/2000/01/rdf-schema#comment> "Baltimore group 5" .
+<https://w3id.org/plantvirusontology/GroupV> <http://www.w3.org/2000/01/rdf-schema#label> "Group V" .
+# 
+# https://w3id.org/plantvirusontology/GroupVI
+<https://w3id.org/plantvirusontology/GroupVI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GroupVI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C14269> .
+<https://w3id.org/plantvirusontology/GroupVI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C54085> .
+<https://w3id.org/plantvirusontology/GroupVI> <http://www.w3.org/2000/01/rdf-schema#comment> "Baltimore group 6" .
+<https://w3id.org/plantvirusontology/GroupVI> <http://www.w3.org/2000/01/rdf-schema#label> "Group V I" .
+# 
+# https://w3id.org/plantvirusontology/GroupVII
+<https://w3id.org/plantvirusontology/GroupVII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/GroupVII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C14200> .
+<https://w3id.org/plantvirusontology/GroupVII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C14269> .
+<https://w3id.org/plantvirusontology/GroupVII> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/C54085> .
+<https://w3id.org/plantvirusontology/GroupVII> <http://www.w3.org/2000/01/rdf-schema#comment> "Baltimore group 7" .
+<https://w3id.org/plantvirusontology/GroupVII> <http://www.w3.org/2000/01/rdf-schema#label> "Group V I I" .
+# 
+# https://w3id.org/plantvirusontology/Helical
+<https://w3id.org/plantvirusontology/Helical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Helical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/ViralForm> .
+<https://w3id.org/plantvirusontology/Helical> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus with helical shape" .
+<https://w3id.org/plantvirusontology/Helical> <http://www.w3.org/2000/01/rdf-schema#label> "Helical" .
+# 
+# https://w3id.org/plantvirusontology/Icosaedral
+<https://w3id.org/plantvirusontology/Icosaedral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Icosaedral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/ViralForm> .
+<https://w3id.org/plantvirusontology/Icosaedral> <http://www.w3.org/2000/01/rdf-schema#comment> "Virus with icosaedral shape" .
+<https://w3id.org/plantvirusontology/Icosaedral> <http://www.w3.org/2000/01/rdf-schema#label> "Icosaedral" .
+# 
+# https://w3id.org/plantvirusontology/LipidicCharacteristic
+<https://w3id.org/plantvirusontology/LipidicCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/LipidicCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://snomed.info/id/278201002> .
+<https://w3id.org/plantvirusontology/LipidicCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "Lipidic characteristic of a virus, related to its envelope" .
+<https://w3id.org/plantvirusontology/LipidicCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "Lipidic Characteristic" .
+# 
+# https://w3id.org/plantvirusontology/NonEnveloped
+<https://w3id.org/plantvirusontology/NonEnveloped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/NonEnveloped> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/plantvirusontology/LipidicCharacteristic> .
+<https://w3id.org/plantvirusontology/NonEnveloped> <http://www.w3.org/2000/01/rdf-schema#comment> "Naked virus" .
+<https://w3id.org/plantvirusontology/NonEnveloped> <http://www.w3.org/2000/01/rdf-schema#label> "Non Enveloped" .
+# 
+# https://w3id.org/plantvirusontology/PhysicalTransmission
+<https://w3id.org/plantvirusontology/PhysicalTransmission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/PhysicalTransmission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRANS_0000000> .
+<https://w3id.org/plantvirusontology/PhysicalTransmission> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical transmission of virus" .
+<https://w3id.org/plantvirusontology/PhysicalTransmission> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Transmission" .
+# 
+# https://w3id.org/plantvirusontology/PrevalenceAtTime
+<https://w3id.org/plantvirusontology/PrevalenceAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/PrevalenceAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The prevalence of a virus at a given time in a given country" .
+<https://w3id.org/plantvirusontology/PrevalenceAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "Prevalence At Time" .
+# 
+# https://w3id.org/plantvirusontology/Vector
+<https://w3id.org/plantvirusontology/Vector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/Vector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C14250> .
+<https://w3id.org/plantvirusontology/Vector> <http://www.w3.org/2000/01/rdf-schema#comment> "An organism that transports a virus" .
+<https://w3id.org/plantvirusontology/Vector> <http://www.w3.org/2000/01/rdf-schema#label> "Vector" .
+# 
+# https://w3id.org/plantvirusontology/ViralForm
+<https://w3id.org/plantvirusontology/ViralForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/plantvirusontology/ViralForm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://snomed.info/id/278201002> .
+<https://w3id.org/plantvirusontology/ViralForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of viral shapes" .
+<https://w3id.org/plantvirusontology/ViralForm> <http://www.w3.org/2000/01/rdf-schema#label> "Viral Form" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid69 <http://www.w3.org/2002/07/owl#members> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupVII> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupVI> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupV> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupIV> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupIII> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupII> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/plantvirusontology/GroupI> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
